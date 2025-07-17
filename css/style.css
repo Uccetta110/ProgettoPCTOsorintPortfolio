@@ -230,12 +230,10 @@ img:hover {
 
 #projects-div a {
   color: #eef4ed;
-  /* colore normale */
 }
 
 #projects-div a:visited {
   color: #8da9c4;
-  /* colore dopo il click */
 }
 
 #projects-div div {

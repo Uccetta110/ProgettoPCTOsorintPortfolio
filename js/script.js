@@ -61,13 +61,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (window.scrollY < window.innerHeight*0,5 || window.scrollY == 0) {
-      body.setAttribute("style", "background-color: #eef4ed");
+      //body.setAttribute("style", "background-color: #eef4ed");
     }
     if (window.scrollY >= window.innerHeight && window.scrollY < window.innerHeight*2,1) {
-      body.setAttribute("style", "background-color: #8DA9C4");
+      //body.setAttribute("style", "background-color: #8DA9C4");
     }
     if (window.scrollY >= window.innerHeight*2.1) {
-      body.setAttribute("style", "background-color: #134074");
+     // body.setAttribute("style", "background-color: #134074");
     }
   });
 });
