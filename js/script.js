@@ -7,25 +7,28 @@ document.addEventListener("DOMContentLoaded", () => {
   let indirizzoImg = document.getElementById("indirizzo-img");
   let mapsImg = document.getElementById("maps-img");
   let body = document.getElementById("body");
+  let centercontent = document.getElementById("center-content");
+  let schooldiv = document.getElementById("school-div");
+  let projectsdiv = document.getElementById("projects-div");
 
   aboutButton.addEventListener("click", () => {
     console.log("About button clicked");
     window.scrollTo({
-      top: 200,
+      top: centercontent.offsetTop - 10,
       behavior: "smooth",
     });
   });
   schoolButton.addEventListener("click", () => {
     console.log("School button clicked");
     window.scrollTo({
-      top: 800,
+      top: schooldiv.offsetTop - 10,
       behavior: "smooth",
     });
   });
   projectsButton.addEventListener("click", () => {
     console.log("Projects button clicked");
     window.scrollTo({
-      top: 1500,
+      top: projectsdiv.offsetTop - 10,
       behavior: "smooth",
     });
   });
@@ -57,13 +60,13 @@ document.addEventListener("DOMContentLoaded", () => {
       homeButton.setAttribute("style", "visibility: hidden;");
     }
 
-    if (window.scrollY < 600) {
+    if (window.scrollY < window.innerHeight*0,5 || window.scrollY == 0) {
       body.setAttribute("style", "background-color: #eef4ed");
     }
-    if (window.scrollY >= 600 && window.scrollY < 1400) {
+    if (window.scrollY >= window.innerHeight && window.scrollY < window.innerHeight*2,1) {
       body.setAttribute("style", "background-color: #8DA9C4");
     }
-    if (window.scrollY >= 1400) {
+    if (window.scrollY >= window.innerHeight*2.1) {
       body.setAttribute("style", "background-color: #134074");
     }
   });
