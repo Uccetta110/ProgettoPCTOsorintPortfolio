@@ -7,6 +7,7 @@
   body {
     height: 500vh;
   }
+
   #center-content {
     margin-top: 25%;
     flex-direction: column;
@@ -35,15 +36,6 @@
     margin-right: 2%;
     margin-top: 150%;
   }
-
-  #header div {
-    margin: 0 2px;
-    padding: 10px 16px;
-  }
-
-  #header h3 {
-    font-size: 1rem;
-  }
 }
 
 body {
@@ -56,6 +48,35 @@ body {
   justify-content: center;
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   overflow-x: hidden;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 100;
+  padding: 1rem 0;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#header div {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 0 8px;
+  border-radius: 25px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+#header div:hover {
+  background: linear-gradient(135deg, #8da9c4, #134074);
+  color: white;
+  box-shadow: 0 8px 25px rgba(19, 64, 116, 0.3);
 }
 
 #center-content div {
@@ -136,20 +157,6 @@ img:hover {
 #text-div div {
   display: flex;
   overflow: auto;
-}
-
-#header {
-  position: absolute;
-}
-
-#header div {
-  display: inline-block;
-  padding: 7px;
-}
-
-#header div:hover {
-  background-color: #dfe8d9;
-  cursor: pointer;
 }
 
 #home-button {
