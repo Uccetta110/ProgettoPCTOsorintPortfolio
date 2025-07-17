@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let homeButton = document.getElementById("home-button");
   let schoolImg = document.getElementById("school-img");
   let indirizzoImg = document.getElementById("indirizzo-img");
+  let mapsImg = document.getElementById("maps-img");
 
   aboutButton.addEventListener("click", () => {
     console.log("About button clicked");
@@ -41,6 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
   indirizzoImg.addEventListener("click", () => {
     console.log("School image clicked");
     window.open("https://www.itispaleocapa.edu.it/istituto/informatica/");
+  });
+    mapsImg.addEventListener("click", () => {
+    console.log("School image clicked");
+    window.open("https://www.itispaleocapa.edu.it/istituto/dove-siamo/");
   });
 
   document.addEventListener("scroll", () => {

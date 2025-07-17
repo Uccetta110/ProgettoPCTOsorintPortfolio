@@ -44,9 +44,12 @@ body {
 
 img {
   border: 2px ridge #010205;
+  object-fit: cover;
 }
 
-
+#maps-img {
+  width: 200px;
+}
 
 #center-content h1 {
   font-size: 2.5em;
