@@ -1,12 +1,145 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main main right"
+    "footer footer footer footer footer footer";
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container>div {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.item1 {
+  grid-area: header;
+  background-color: purple;
+  text-align: center;
+  color: #ffffff;
+}
+
+.item1>h1 {
+  font-size: 40px;
+}
+
+.item2 {
+  grid-area: menu;
+}
+
+.item2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item2 li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+}
+
+.item2 li:hover {
+  background-color: #0099cc;
+}
+
+.item3 {
+  grid-area: main;
+}
+
+.item3>h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.item3>p {
+  margin-bottom: 7px;
+}
+
+.item4 {
+  grid-area: right;
+  border: 2px solid #0099cc;
+  background-color: white;
+  padding: 15px;
+  color: #000000;
+}
+
+.item4>h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.item4 li {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.item5 {
+  grid-area: footer;
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 6;}
+  .item3 {grid-area: 3 / span 6;}
+  .item4 {grid-area: 4 / span 6;}
+  .item5 {grid-area: 5 / span 6;}
+}
+
+@media only screen and (min-width: 600px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 1;}
+  .item3 {grid-area: 2 / span 4;}
+  .item4 {grid-area: 3 / span 6;}
+  .item5 {grid-area: 4 / span 6;}
+}
+
+@media only screen and (min-width: 768px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 1;}
+  .item3 {grid-area: 2 / span 4;}
+  .item4 {grid-area: 2 / span 1;}
+  .item5 {grid-area: 3 / span 6;}
+}
+/*
+/* Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {  
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 1;}
+  .item3 {grid-area: 2 / span 4;}
+  .item4 {grid-area: 2 / span 1;}
+  .item5 {grid-area: 3 / span 6;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {  
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 1;}
+  .item3 {grid-area: 2 / span 4;}
+  .item4 {grid-area: 2 / span 1;}
+  .item5 {grid-area: 3 / span 6;}
+}*/
+
 body {
   margin: 0;
   color: #060b11;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  height: 600vh;
+  height: 350vh;
   background-color: #eef4ed;
   display: flex;
   justify-content: center;
-  /*align-items: center;  */
+  transition: background-color 0.5s ease;
 }
 
 #center-content div {
@@ -15,8 +148,8 @@ body {
 }
 
 #center-content a {
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   text-decoration: none;
 }
 
@@ -33,6 +166,8 @@ body {
   border-radius: 20px;
   margin-top: 50vh;
   align-items: center;
+    margin-left: 5%;
+  margin-right: 5%;
 }
 
 #profile-image {
@@ -89,6 +224,7 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  z-index: 10;
 }
 
 #school-div {
@@ -99,24 +235,48 @@ img {
   border-radius: 20px;
   box-shadow: #060b11ab 0px 0px 5px 2px;
   padding: 2px;
+    margin-left: 5%;
+  margin-right: 5%;
 }
 
 #school-div div {
   padding: 3px;
+  max-width: 100vh;
 }
 
 #school-div img {
   border-radius: 20px;
+    width: 100%;
+  height: auto;
+}
+#indirizzo img {
+  max-width: 50vh;
+}
+
+#altro img {
+  max-width: 50vh;
 }
 
 #projects-div {
-    position: absolute;
+  position: absolute;
   top: 243vh;
   align-self: center;
   display: flex;
   border-radius: 20px;
   box-shadow: #060b11ab 0px 0px 5px 2px;
   padding: 2px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#projects-div a {
+  color: #eef4ed;
+  /* colore normale */
+}
+
+#projects-div a:visited {
+  color: #8da9c4;
+  /* colore dopo il click */
 }
 
 #projects-div div {
@@ -125,8 +285,7 @@ img {
 
 #projects-div img {
   border-radius: 20px;
-    object-fit: cover;
-  width: 500px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
-
-
