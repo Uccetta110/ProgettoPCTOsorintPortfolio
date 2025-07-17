@@ -9,8 +9,19 @@ body {
   /*align-items: center;  */
 }
 
-div {
+#center-content div {
   display: inline-block;
+  padding: 5px;
+}
+
+#center-content a {
+  display: flex; 
+  align-items: center; 
+  text-decoration: none;
+}
+
+#link img {
+  border: 0px transparent;
 }
 
 #center-content {
@@ -28,11 +39,14 @@ div {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  border: 2px ridge #010205;
 }
 
-#center-content div {
-  padding: 5px;
+img {
+  border: 2px ridge #010205;
 }
+
+
 
 #center-content h1 {
   font-size: 2.5em;
@@ -40,8 +54,8 @@ div {
 }
 
 #text-div div {
-    display: flex;
-    overflow: auto;
+  display: flex;
+  overflow: auto;
 }
 
 #header {
@@ -57,3 +71,59 @@ div {
   background-color: #dfe8d9;
   cursor: pointer;
 }
+
+#home-button {
+  position: fixed;
+  visibility: hidden;
+  border-radius: 20px;
+  background-color: #0b2545;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#school-div {
+  position: absolute;
+  top: 132vh;
+  align-self: center;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: #060b11ab 0px 0px 5px 2px;
+  padding: 2px;
+}
+
+#school-div div {
+  padding: 3px;
+}
+
+#school-div img {
+  border-radius: 20px;
+}
+
+#projects-div {
+    position: absolute;
+  top: 243vh;
+  align-self: center;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: #060b11ab 0px 0px 5px 2px;
+  padding: 2px;
+}
+
+#projects-div div {
+  padding: 3px;
+}
+
+#projects-div img {
+  border-radius: 20px;
+    object-fit: cover;
+  width: 500px;
+}
+
+

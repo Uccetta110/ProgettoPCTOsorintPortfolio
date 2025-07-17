@@ -1,62 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div id="header">
-    <div id="about-button"> <h3>About</h3></div>
-    <div id="school-button"> <h3>School</h3></div>
-    <div id="projects-button"> <h3>Projects</h3></div>
-    </div>
 
-    <div id="center-content">
-      <div id="profile-image-div center-div">
-        <img
-          id="profile-image"
-          src="/assets/images/Agliati Federico-1.png"
-          alt="profile image"
-        />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="header">
+    <div id="about-button">
+      <h3>About</h3>
+    </div>
+    <div id="school-button">
+      <h3>School</h3>
+    </div>
+    <div id="projects-button">
+      <h3>Projects</h3>
+    </div>
+  </div>
+
+  <div id="center-content">
+    <div id="profile-image-div center-div">
+      <img id="profile-image" src="/assets/images/Agliati Federico-1.png" alt="profile image" />
+    </div>
+    <div id="text-div">
+      <div id="name-div center-div">
+        <h1 id="name">Agliati Federico</h1>
       </div>
-      <div id="text-div">
-        <div id="name-div center-div">
-          <h1 id="name">Agliati Federico</h1>
-        </div>
-        <div id="git-link-div">
-          <a
-            id="git-link"
-            href="https://github.com/Uccetta110"
-            target="_blank"
-            style="display: flex; align-items: center; text-decoration: none"
+      <div id="git-link-div">
+        <a id="link" href="https://github.com/Uccetta110" target="_blank"
           >
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-              alt="GitHub icon"
-              style="width: 24px; height: 24px; margin-right: 8px"
-            />
-            Uccetta110
-          </a>
-        </div>
-        <div id="insta-link">
-          <a
-            id="insta-link"
-            href="https://instagram.com/agliagliati"
-            target="_blank"
-            style="display: flex; align-items: center; text-decoration: none"
-          >
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-              alt="Instagram icon"
-              style="width: 24px; height: 24px; margin-right: 8px"
-            />
-            agliagliati
-          </a>
-        </div>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub icon"
+            style="width: 24px; height: 24px; margin-right: 8px" />
+          Uccetta110
+        </a>
+      </div>
+      <div id="insta-link">
+        <a id="link" href="https://instagram.com/agliagliati" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram icon"
+            style="width: 24px; height: 24px; margin-right: 8px" />
+          agliagliati
+        </a>
       </div>
     </div>
-    <script type="module" src="js/script.js"></script>
-  </body>
+  </div>
+  <div id="home-button">
+    <i class="fa-solid fa-arrow-up" style="color: #ffffff"></i>
+  </div>
+  <div id="school-div">
+    <div id="paleocapa">
+      <h1>ITIS Pietro Paleocapa</h1>
+      <img id="school-img"
+        src="assets/images/il-museo-dellindustria-trova-casataglio-del-nastro-a-giugno-allesperia_01a5219c-c206-11e5-9dd2-d7a5b91d6d64_700_455_big_gallery_linked_i.jpg">
+    </div>
+    <div>
+      <div id="indirizzo">
+        <h1>Informatica</h1>
+        <img id="indirizzo-img" src="assets/images/images.jfif">
+      </div>
+      <div>
+        <h1>Altro</h1>
+      </div>
+    </div>
+  </div>
+
+  <div id="projects-div">
+    <div id="FlappyDefense">
+      <h1>JavaScript</h1>
+        <a id="link" href="https://github.com/Uccetta110/FlappyDefense" target="_blank"
+          style="display: flex; align-items: center; text-decoration: none">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub icon"
+            style="width: 50px; height: 50px; margin-right: 8px" />
+          FlappyDefense
+        </a>
+        <img id="FlappyDefense-img" src="assets/images/Screenshot 2025-07-17 114337.png">
+    </div>
+    <div id="FlappyMusic">
+      <h1>C#</h1>
+        <a id="link" href="https://github.com/Uccetta110" target="_blank"
+          style="display: flex; align-items: center; text-decoration: none">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub icon"
+            style="width: 50px; height: 50px; margin-right: 8px" />
+          FlappyMusic
+        </a>
+        <img id="FlappyMusic-img" src="assets/images/word-image-3.png">
+    </div>
+  </div>
+  <script type="module" src="js/script.js"></script>
+</body>
+
 </html>
