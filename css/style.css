@@ -3,41 +3,6 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  body {
-    height: 500vh;
-  }
-
-  #center-content {
-    margin-top: 25%;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  #center-content h1 {
-    font-size: 2.2rem;
-  }
-
-  #profile-image {
-    width: 180px;
-    height: 180px;
-  }
-
-  #school-div {
-    flex-direction: column;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 40%;
-  }
-
-  #projects-div {
-    flex-direction: column;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 150%;
-  }
-}
-
 body {
   margin: 0;
   color: #060b11;
@@ -51,7 +16,7 @@ body {
 }
 
 #header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -254,4 +219,40 @@ img:hover {
   object-fit: cover;
   width: 95%;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    height: 200%;
+    background: linear-gradient(135deg, #eef4ed 0%, #d4e6d1 100%);
+  }
+
+  #center-content {
+    margin-top: 25%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #center-content h1 {
+    font-size: 2.2rem;
+  }
+
+  #profile-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  #school-div {
+    flex-direction: column;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 40%;
+  }
+
+  #projects-div {
+    flex-direction: column;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 150%;
+  }
 }
