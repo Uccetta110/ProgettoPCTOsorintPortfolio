@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let aboutButton = document.getElementById("about-button");
-  let schoolButton = document.getElementById("school-button");
+  let aboutButton = document.getElementById("about-button") as HTMLDivElement | null;
+  let schoolButton: HTMLElement | null = document.getElementById("school-button");
   let projectsButton = document.getElementById("projects-button");
   let homeButton = document.getElementById("home-button");
   let schoolImg = document.getElementById("school-img");
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   flappyMusicImg?.addEventListener("click", () => {
-    console.log("FlappyDefense img clicked");
+    console.log("FlappyMusic img clicked");
     window.open("https://github.com/Uccetta110/FlappyMusic");
   });
 
@@ -91,8 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     if (
       (window.scrollY >= window.innerHeight &&
-        window.scrollY < window.innerHeight * 2,
-      1)
+        window.scrollY < window.innerHeight * 2.1)
     ) {
       //body.setAttribute("style", "background-color: #8DA9C4");
     }
